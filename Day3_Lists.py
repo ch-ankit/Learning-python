@@ -44,3 +44,27 @@ print(popped_motorcycle)
 motorcycles.remove('yamaha')
 print(motorcycles)
 #The remove method deletes only the first occurrence of the value you specify
+
+#Try it yourself
+guests=['luffy', 'zoro', 'sanji', 'ussop', 'nami', 'chopper', 'robin', 'franky', 'brook']
+for guest in guests:
+    print("You are invited to my dinner "+guest.title()+".")
+print("Zoro can't make it to dinner because he is lost.")
+guests.remove('zoro')
+guests.insert(0,'carrot')
+for guest in guests:
+    print("You are invited to my dinner "+guest.title()+".")
+print("I have found a bigger dinner table.")
+guests.insert(0,'momo')
+guests.insert(int(len(guests)/2),'yamato')
+guests.append('zoro')
+for guest in guests:
+    print("You are invited to my dinner "+guest.title()+".")
+print("I can only invite two people for dinner.")
+for i in range(2,len(guests)):
+    popped_guest=guests.pop()
+    print("Sorry "+popped_guest.title()+", I can't invite you to dinner.")
+
+#Organizing a List
+cars=['bmw','audi','toyota','subaru']
+cars.sort()
